@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             input.maxLength = 1;
             input.setAttribute('data-row', attempt);
             input.setAttribute('data-index', i);
+            
             input.disabled = attempt !== 0; // Only enable the first row initially
 
             row.appendChild(input);
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         letterBox.appendChild(row);
     }
 
-    // Event listener for checking the word
+    // Event listener: checking word
     checkWordButton.addEventListener('click', () => {
         if (currentAttempt < maxAttempts) {
             const rowInputs = document.querySelectorAll(`.letter[data-row="${currentAttempt}"]`);
