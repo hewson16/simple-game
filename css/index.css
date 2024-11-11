@@ -4,7 +4,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
     flex-direction: column;
 }
@@ -23,22 +22,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
 }
 
 .letter-row {
     display: flex;
     justify-content: center;
-    margin: 5px 0;
+    margin: 1%;
 }
 
 .letter {
-    width: 40px;
-    height: 40px;
-    margin: 0 5px;
+    width: 4rem;
+    height: 4rem;
+    margin: 1%;
     text-align: center;
-    font-size: 24px;
-    border: 2px solid white;
+    font-size: 200%;
+    border: solid white;
     background-color: black;
     color: white;
 }

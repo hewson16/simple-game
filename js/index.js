@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const targetWord = "apple"; // TEMP WORD, need to add a list
-    const maxAttempts = 5;
+    const maxAttempts = 6;
     let currentAttempt = 0;
 
     const letterBox = document.getElementById('box');
