@@ -21,12 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
             input.setAttribute('data-index', i);
             
             input.disabled = attempt !== 0; // Only enable the first row initially
-
+            
+        //(Garrett)move to next input after 1 character limit
+            
+            input.addEventListener('input', () => {
+                if (input.value.length === 1) {
+                    const nextInput = row.querySelector(`input[data-index="${i + 1}"]`);
+                            if (nextInput) {
+                            nextInput.focus();
+                        }
+                    }
+                });
             row.appendChild(input);
         }
         letterBox.appendChild(row);
     }
-
     // Event listener: checking word
     checkWordButton.addEventListener('click', () => {
         if (currentAttempt < maxAttempts) {
